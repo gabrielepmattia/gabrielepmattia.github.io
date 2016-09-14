@@ -1,4 +1,5 @@
 var mylastip = angular.module('myPersonalSite', [,
+    'ngAnimate',
     'ngRoute',
     'MainCtrl',
     'publicRoutes'

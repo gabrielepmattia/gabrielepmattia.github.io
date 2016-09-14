@@ -1,3 +1,2 @@
-angular.module('MainCtrl', []).controller('MainController', function() {
-    //$scope.tagline = 'MyLastIPtestmain';
+angular.module('MainCtrl', []).controller('MainController', function($scope, $rootScope){
 });
