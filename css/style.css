@@ -63,6 +63,11 @@ html, body {
 .links img {
     max-width: 50px;
     max-height: 50px;
+    margin-left: 15px;
+}
+
+.links img.first{
+    margin: 0;
 }
 
 #footer-wrapper {
