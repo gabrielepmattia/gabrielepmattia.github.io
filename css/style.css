@@ -22,13 +22,13 @@ html, body {
 }
 
 #header-wrapper {
-    height: 20%;
+    height: 15%;
 }
 
 #center-wrapper {
     padding-left: 10vw;
     padding-right: 10vw;
-    height: 70%;
+    height: 75%;
     vertical-align: middle;
     text-align: left;
 }
@@ -72,6 +72,8 @@ html, body {
 
 #footer-wrapper {
     height: 10%;
+    font-size: 10px;
+    display: none;
 }
 
 /* ======== */
