@@ -15,23 +15,23 @@ var h = $('#blurCanvasTop').height();
 var ww = $(window).width();
 var wh = $(window).height();
 canvas.width = ww;
-canvas.height= wh;
+canvas.height = wh;
 var partCount = 100;
 var particles = [];
 
-function particle(){
-    this.color = 'rgba(255,255,255,'+ Math.random()+')';
+function particle() {
+    this.color = 'rgba(255,255,255,' + Math.random() + ')';
     console.log(this.color);
-    this.x = randomInt(0,ww);
-    this.y = randomInt(0,wh);
+    this.x = randomInt(0, ww);
+    this.y = randomInt(0, wh);
     this.direction = {
         "x": -1 + Math.random() * 2,
         "y": -1 + Math.random() * 2
     };
     this.vx = 0.3 * Math.random();
     this.vy = 0.3 * Math.random();
-    this.radius = randomInt(2,3);
-    this.float = function(){
+    this.radius = randomInt(2, 3);
+    this.float = function () {
         this.x += this.vx * this.direction.x;
         this.y += this.vy * this.direction.y;
     };
@@ -65,14 +65,14 @@ function clearCanvas() {
     cloneCtx.clearRect(0, 0, ww, wh);
     ctx.clearRect(0, 0, ww, wh);
 }
-function createParticles(){
-    for (i=0;i<partCount;i++){
+function createParticles() {
+    for (i = 0; i < partCount; i++) {
         var p = new particle();
         particles.push(p);
     }
 }
 function drawParticles() {
-    for (i=0;i<particles.length;i++) {
+    for (i = 0; i < particles.length; i++) {
         p = particles[i];
         p.draw();
     }
@@ -96,21 +96,19 @@ function animateParticles() {
 requestAnimationFrame(animateParticles);
 cloneCtx.drawImage(canvas, 0, 0);
 
-$(window).on('resize',function(){
+$(window).on('resize', function () {
     ww = $(window).width();
     wh = $(window).height();
     canvas.width = ww;
-    canvas.height= wh;
+    canvas.height = wh;
     clearCanvas();
     particles = [];
     createParticles();
     drawParticles();
 });
-function randomInt(min,max)
-{
-    return Math.floor(Math.random()*(max-min+1)+min);
+function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
-function velocityInt(min,max)
-{
-    return Math.random()*(max-min+1)+min;
+function velocityInt(min, max) {
+    return Math.random() * (max - min + 1) + min;
 }
