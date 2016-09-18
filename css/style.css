@@ -74,7 +74,30 @@ html, body {
     height: 10%;
     font-size: 10px;
     display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
+
+/* Project page */
+.platform-container {
+    /* padding: 25px;
+    border: solid 1px #FFF;
+    border-radius: 10px; */
+}
+
+.platform-container img {
+    max-width: 100px;
+    max-height: 50px;
+    margin-left: 0px;
+}
+
+.platform-container .image-container{
+    float: left;
+    width:  150px;
+    height: 100%;
+}
+
 
 /* ======== */
 

@@ -5,6 +5,10 @@ angular.module('publicRoutes', [])
                 templateUrl: 'views/home.html',
                 controller: "MainController"
             })
+            .when("/projects", {
+                templateUrl: 'views/projects.html',
+                controller: "MainController"
+            });
     })
     .animation('.app-view', function () {
         return {
