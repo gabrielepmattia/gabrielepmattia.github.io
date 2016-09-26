@@ -55,22 +55,26 @@ a:hover {
     height: 75%;
     vertical-align: middle;
     text-align: left;
-    overflow: auto;
 }
 
-#center-wrapper::-webkit-scrollbar-track {
+div::-webkit-scrollbar-track {
     /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6); */
     background-color: rgba(0, 0, 0, 0);
 }
 
-#center-wrapper::-webkit-scrollbar {
+div::-webkit-scrollbar {
     width: 5px;
     background-color: rgba(0, 0, 0, 0);
 }
 
-#center-wrapper::-webkit-scrollbar-thumb {
+div::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 50px;
+}
+
+#projects-wrapper{
+    overflow: auto;
+    height: 90%; /* Why?? */
 }
 
 #center-wrapper h1 {
