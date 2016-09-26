@@ -13,15 +13,15 @@ angular.module('publicRoutes', [])
     .animation('.app-view', function () {
         return {
             enter: function (element, done) {
-                element.delay(3000);
+                element.delay(2000);
                 element.css('display', 'none');
-                element.fadeIn(3000, done);
+                element.fadeIn(2000, done);
                 return function () {
                     element.stop();
                 }
             },
             leave: function (element, done) {
-                element.fadeOut(1000, done);
+                element.fadeOut(500, done);
                 return function () {
                     element.stop();
                 }

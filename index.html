@@ -20,11 +20,11 @@
     -->
 
     <!-- Meta -->
-    <meta name="description" content="Gabriele Proietti Mattia aka gabry3795 personal website" />
-    <meta name="keywords" content="gabry3795, site, personal, me" />
+    <meta name="description" content="Gabriele Proietti Mattia aka gabry3795 personal website"/>
+    <meta name="keywords" content="gabry3795, site, personal, me"/>
     <!-- Icons -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
@@ -34,7 +34,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/icons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
@@ -43,7 +43,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <meta name="google-site-verification" content="hUV6IMpNOqaC0Q2Clq3tDmCYhFmRfWgmI0VhpyNT2y8" />
+    <meta name="google-site-verification" content="hUV6IMpNOqaC0Q2Clq3tDmCYhFmRfWgmI0VhpyNT2y8"/>
 
     <script>document.write('<base href="' + document.location + '" />');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,20 +73,25 @@
 <canvas class="container" id="container" role="main"></canvas>
 <div id="main-wrapper">
     <div id="header-wrapper">
-
+        <div id="main-navigator">
+            <a href="#/">Home</a> &bull;
+            <a href="#/projects">Projects</a>
+        </div>
     </div>
 
     <div ng-view id="center-wrapper" class="app-view"></div>
 
     <div id="footer-wrapper">
-        <a href="#/">Home</a> &bull;
-        <a href="#/projects">Projects</a><br />
         Handmade with &hearts; by me. Inspired by <a href="http://codepen.io/JonasB/pen/cwEtH">JonasB</a>
     </div>
 </div>
 
-<div class="blur blurTop"><canvas class="canvas" id="blurCanvasTop"></canvas></div>
-<div class="blur blurBottom"><canvas width="1000px" height="1000px" class="canvas" id="blurCanvasBottom"></canvas></div>
+<div class="blur blurTop">
+    <canvas class="canvas" id="blurCanvasTop"></canvas>
+</div>
+<div class="blur blurBottom">
+    <canvas width="1000px" height="1000px" class="canvas" id="blurCanvasBottom"></canvas>
+</div>
 <script src="js/particlebg.js"></script>
 
 </body>
