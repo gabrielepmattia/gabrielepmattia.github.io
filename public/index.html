@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myPersonalSite" class="animation">
+<head>
+    <meta charset="UTF-8">
+    <title>Gabriele Proietti Mattia (gabry3795)</title>
+
+    <!--
+        This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    -->
+
+    <!-- Meta -->
+    <meta name="description" content="Gabriele Proietti Mattia aka gabry3795 personal website"/>
+    <meta name="keywords" content="gabry3795, site, personal, me"/>
+    <!-- Icons -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="img/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="google-site-verification" content="hUV6IMpNOqaC0Q2Clq3tDmCYhFmRfWgmI0VhpyNT2y8"/>
+
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/ngapp-anims.css" rel="stylesheet"> -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- js -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
+    <script src="js/ngapp_mainctrl.js"></script>
+    <script src="js/ngapp_routes.js"></script>
+    <script src="js/ngapp.js"></script>
+    <script src="js/jq_anims.js"></script>
+
+    <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+</head>
+<body class="font-shadow">
+
+<canvas class="container" id="container" role="main"></canvas>
+<div id="main-wrapper">
+    <div id="header-wrapper">
+        <div id="main-navigator">
+            <a href="#/">Home</a> &bull;
+            <a href="#/projects">Projects</a>
+        </div>
+    </div>
+
+    <div ng-view id="center-wrapper" class="app-view"></div>
+
+    <div id="footer-wrapper">
+        Handmade with &hearts; by me. Inspired by <a href="http://codepen.io/JonasB/pen/cwEtH">JonasB</a>
+    </div>
+</div>
+
+<div class="blur blurTop">
+    <canvas class="canvas" id="blurCanvasTop"></canvas>
+</div>
+<div class="blur blurBottom">
+    <canvas width="1000px" height="1000px" class="canvas" id="blurCanvasBottom"></canvas>
+</div>
+<script src="js/particlebg.js"></script>
+
+</body>
+</html>
