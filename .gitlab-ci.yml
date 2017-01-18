@@ -1,0 +1,12 @@
+# @Author: Gabriele Proietti Mattia <gabry3795>
+# @Date:   2017-01-18T12:29:08+01:00
+# @Email:  gabry.gabry@hotmail.it
+# @Last modified by:   gabry3795
+# @Last modified time: 2017-01-18T12:29:11+01:00
+
+
+pages:
+  script:
+  artifacts:
+    paths:
+    - public
