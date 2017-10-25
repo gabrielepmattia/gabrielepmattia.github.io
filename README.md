@@ -1,1 +1,1 @@
-My personal website repo for [gabry3795.github.io](http://gabry3795.github.io)
+My personal website was moved to [gabry3795.gitlab.io](http://gabry3795.gitlab.io)
